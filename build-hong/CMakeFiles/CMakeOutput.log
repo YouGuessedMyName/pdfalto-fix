@@ -1,0 +1,630 @@
+The system is: Linux - 5.15.0-122-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/fuzz/honggfuzz/hfuzz_cc/hfuzz-cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Clang, found in "/home/fuzz/pdfalto/build-hong/CMakeFiles/3.22.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/fuzz/honggfuzz/hfuzz_cc/hfuzz-clang++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is Clang, found in "/home/fuzz/pdfalto/build-hong/CMakeFiles/3.22.1/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b45c6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b45c6.dir/build.make CMakeFiles/cmTC_b45c6.dir/build
+gmake[1]: Entering directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o
+/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-cc   -v -MD -MT CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o -sys-header-deps -I /home/fuzz/honggfuzz/includes/ -D __NO_STRING_INLINES -D "HFND_FUZZING_ENTRY_FUNCTION_CXX(x,y)=extern const char* LIBHFNETDRIVER_module_netdriver;const char** LIBHFNETDRIVER_tmp1 = &LIBHFNETDRIVER_module_netdriver;extern \"C\" int HonggfuzzNetDriver_main(x,y);int HonggfuzzNetDriver_main(x,y)" -D "HFND_FUZZING_ENTRY_FUNCTION(x,y)=extern const char* LIBHFNETDRIVER_module_netdriver;const char** LIBHFNETDRIVER_tmp1 = &LIBHFNETDRIVER_module_netdriver;int HonggfuzzNetDriver_main(x,y);int HonggfuzzNetDriver_main(x,y)" -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -Wno-unused-command-line-argument -fdebug-compilation-dir=/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp -ferror-limit 19 -fsanitize-coverage-type=3 -fsanitize-coverage-indirect-calls -fsanitize-coverage-trace-cmp -fsanitize-coverage-trace-div -fsanitize-coverage-trace-pc-guard -fno-builtin -fgnuc-version=4.2.1 -mllvm -inline-threshold=1000 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/fuzz/honggfuzz/includes
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking C executable cmTC_b45c6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b45c6.dir/link.txt --verbose=1
+/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-cc  -v CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o -o cmTC_b45c6 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b45c6 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib --whole-archive /usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a --no-whole-archive --dynamic-list=/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a.syms --wrap=strcmp --wrap=strcasecmp --wrap=stricmp --wrap=strncmp --wrap=strncasecmp --wrap=strnicmp --wrap=strstr --wrap=strcasestr --wrap=memcmp --wrap=bcmp --wrap=memmem --wrap=strcpy --wrap=strlcpy --wrap=ap_cstr_casecmp --wrap=ap_cstr_casecmpn --wrap=ap_strcasestr --wrap=apr_cstr_casecmp --wrap=apr_cstr_casecmpn --wrap=CRYPTO_memcmp --wrap=OPENSSL_memcmp --wrap=OPENSSL_strcasecmp --wrap=OPENSSL_strncasecmp --wrap=memcmpct --wrap=xmlStrncmp --wrap=xmlStrcmp --wrap=xmlStrEqual --wrap=xmlStrcasecmp --wrap=xmlStrncasecmp --wrap=xmlStrstr --wrap=xmlStrcasestr --wrap=memcmp_const_time --wrap=strcsequal --wrap=cmsstrcasecmp --wrap=g_strcmp0 --wrap=g_strcasecmp --wrap=g_strncasecmp --wrap=g_strstr_len --wrap=g_ascii_strcasecmp --wrap=g_ascii_strncasecmp --wrap=g_str_has_prefix --wrap=g_str_has_suffix --wrap=Curl_strcasecompare --wrap=curl_strequal --wrap=Curl_safe_strcasecompare --wrap=Curl_strncasecompare --wrap=curl_strnequal -u HonggfuzzNetDriver_main -u LIBHFUZZ_module_instrument -u LIBHFUZZ_module_memorycmp CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o /tmp/libhfnetdriver.1000.abf813b7e9c89d82.a /tmp/libhfuzz.1000.82fa25c013558717.a /tmp/libhfcommon.1000.add791f6ac3d2fe.a -ldl -lrt --no-as-needed -lpthread -lrt -lm -ldl -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+gmake[1]: Leaving directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/fuzz/honggfuzz/includes]
+    add: [/usr/lib/llvm-14/lib/clang/14.0.0/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/home/fuzz/honggfuzz/includes] ==> [/home/fuzz/honggfuzz/includes]
+  collapse include dir [/usr/lib/llvm-14/lib/clang/14.0.0/include] ==> [/usr/lib/llvm-14/lib/clang/14.0.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/home/fuzz/honggfuzz/includes;/usr/lib/llvm-14/lib/clang/14.0.0/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b45c6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b45c6.dir/build.make CMakeFiles/cmTC_b45c6.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-cc   -v -MD -MT CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/bin]
+  ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [ (in-process)]
+  ignore line: [ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o -sys-header-deps -I /home/fuzz/honggfuzz/includes/ -D __NO_STRING_INLINES -D "HFND_FUZZING_ENTRY_FUNCTION_CXX(x y)=extern const char* LIBHFNETDRIVER_module_netdriver]
+  ignore line: [const char** LIBHFNETDRIVER_tmp1 = &LIBHFNETDRIVER_module_netdriver]
+  ignore line: [extern \"C\" int HonggfuzzNetDriver_main(x y)]
+  ignore line: [int HonggfuzzNetDriver_main(x y)" -D "HFND_FUZZING_ENTRY_FUNCTION(x y)=extern const char* LIBHFNETDRIVER_module_netdriver]
+  ignore line: [const char** LIBHFNETDRIVER_tmp1 = &LIBHFNETDRIVER_module_netdriver]
+  ignore line: [int HonggfuzzNetDriver_main(x y)]
+  ignore line: [int HonggfuzzNetDriver_main(x y)" -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -Wno-unused-command-line-argument -fdebug-compilation-dir=/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp -ferror-limit 19 -fsanitize-coverage-type=3 -fsanitize-coverage-indirect-calls -fsanitize-coverage-trace-cmp -fsanitize-coverage-trace-div -fsanitize-coverage-trace-pc-guard -fno-builtin -fgnuc-version=4.2.1 -mllvm -inline-threshold=1000 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/fuzz/honggfuzz/includes]
+  ignore line: [ /usr/lib/llvm-14/lib/clang/14.0.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_b45c6]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b45c6.dir/link.txt --verbose=1]
+  ignore line: [/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-cc  -v CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o -o cmTC_b45c6 ]
+  ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/bin]
+  ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b45c6 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib --whole-archive /usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a --no-whole-archive --dynamic-list=/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a.syms --wrap=strcmp --wrap=strcasecmp --wrap=stricmp --wrap=strncmp --wrap=strncasecmp --wrap=strnicmp --wrap=strstr --wrap=strcasestr --wrap=memcmp --wrap=bcmp --wrap=memmem --wrap=strcpy --wrap=strlcpy --wrap=ap_cstr_casecmp --wrap=ap_cstr_casecmpn --wrap=ap_strcasestr --wrap=apr_cstr_casecmp --wrap=apr_cstr_casecmpn --wrap=CRYPTO_memcmp --wrap=OPENSSL_memcmp --wrap=OPENSSL_strcasecmp --wrap=OPENSSL_strncasecmp --wrap=memcmpct --wrap=xmlStrncmp --wrap=xmlStrcmp --wrap=xmlStrEqual --wrap=xmlStrcasecmp --wrap=xmlStrncasecmp --wrap=xmlStrstr --wrap=xmlStrcasestr --wrap=memcmp_const_time --wrap=strcsequal --wrap=cmsstrcasecmp --wrap=g_strcmp0 --wrap=g_strcasecmp --wrap=g_strncasecmp --wrap=g_strstr_len --wrap=g_ascii_strcasecmp --wrap=g_ascii_strncasecmp --wrap=g_str_has_prefix --wrap=g_str_has_suffix --wrap=Curl_strcasecompare --wrap=curl_strequal --wrap=Curl_safe_strcasecompare --wrap=Curl_strncasecompare --wrap=curl_strnequal -u HonggfuzzNetDriver_main -u LIBHFUZZ_module_instrument -u LIBHFUZZ_module_memorycmp CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o /tmp/libhfnetdriver.1000.abf813b7e9c89d82.a /tmp/libhfuzz.1000.82fa25c013558717.a /tmp/libhfcommon.1000.add791f6ac3d2fe.a -ldl -lrt --no-as-needed -lpthread -lrt -lm -ldl -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_b45c6] ==> ignore
+    arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+    arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+    arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+    arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+    arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/llvm-14/bin/../lib] ==> dir [/usr/lib/llvm-14/bin/../lib]
+    arg [-L/lib] ==> dir [/lib]
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [--whole-archive] ==> ignore
+    arg [/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a] ==> lib [/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a]
+    arg [--no-whole-archive] ==> ignore
+    arg [--dynamic-list=/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a.syms] ==> ignore
+    arg [--wrap=strcmp] ==> ignore
+    arg [--wrap=strcasecmp] ==> ignore
+    arg [--wrap=stricmp] ==> ignore
+    arg [--wrap=strncmp] ==> ignore
+    arg [--wrap=strncasecmp] ==> ignore
+    arg [--wrap=strnicmp] ==> ignore
+    arg [--wrap=strstr] ==> ignore
+    arg [--wrap=strcasestr] ==> ignore
+    arg [--wrap=memcmp] ==> ignore
+    arg [--wrap=bcmp] ==> ignore
+    arg [--wrap=memmem] ==> ignore
+    arg [--wrap=strcpy] ==> ignore
+    arg [--wrap=strlcpy] ==> ignore
+    arg [--wrap=ap_cstr_casecmp] ==> ignore
+    arg [--wrap=ap_cstr_casecmpn] ==> ignore
+    arg [--wrap=ap_strcasestr] ==> ignore
+    arg [--wrap=apr_cstr_casecmp] ==> ignore
+    arg [--wrap=apr_cstr_casecmpn] ==> ignore
+    arg [--wrap=CRYPTO_memcmp] ==> ignore
+    arg [--wrap=OPENSSL_memcmp] ==> ignore
+    arg [--wrap=OPENSSL_strcasecmp] ==> ignore
+    arg [--wrap=OPENSSL_strncasecmp] ==> ignore
+    arg [--wrap=memcmpct] ==> ignore
+    arg [--wrap=xmlStrncmp] ==> ignore
+    arg [--wrap=xmlStrcmp] ==> ignore
+    arg [--wrap=xmlStrEqual] ==> ignore
+    arg [--wrap=xmlStrcasecmp] ==> ignore
+    arg [--wrap=xmlStrncasecmp] ==> ignore
+    arg [--wrap=xmlStrstr] ==> ignore
+    arg [--wrap=xmlStrcasestr] ==> ignore
+    arg [--wrap=memcmp_const_time] ==> ignore
+    arg [--wrap=strcsequal] ==> ignore
+    arg [--wrap=cmsstrcasecmp] ==> ignore
+    arg [--wrap=g_strcmp0] ==> ignore
+    arg [--wrap=g_strcasecmp] ==> ignore
+    arg [--wrap=g_strncasecmp] ==> ignore
+    arg [--wrap=g_strstr_len] ==> ignore
+    arg [--wrap=g_ascii_strcasecmp] ==> ignore
+    arg [--wrap=g_ascii_strncasecmp] ==> ignore
+    arg [--wrap=g_str_has_prefix] ==> ignore
+    arg [--wrap=g_str_has_suffix] ==> ignore
+    arg [--wrap=Curl_strcasecompare] ==> ignore
+    arg [--wrap=curl_strequal] ==> ignore
+    arg [--wrap=Curl_safe_strcasecompare] ==> ignore
+    arg [--wrap=Curl_strncasecompare] ==> ignore
+    arg [--wrap=curl_strnequal] ==> ignore
+    arg [-u] ==> ignore
+    arg [HonggfuzzNetDriver_main] ==> ignore
+    arg [-u] ==> ignore
+    arg [LIBHFUZZ_module_instrument] ==> ignore
+    arg [-u] ==> ignore
+    arg [LIBHFUZZ_module_memorycmp] ==> ignore
+    arg [CMakeFiles/cmTC_b45c6.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [/tmp/libhfnetdriver.1000.abf813b7e9c89d82.a] ==> lib [/tmp/libhfnetdriver.1000.abf813b7e9c89d82.a]
+    arg [/tmp/libhfuzz.1000.82fa25c013558717.a] ==> lib [/tmp/libhfuzz.1000.82fa25c013558717.a]
+    arg [/tmp/libhfcommon.1000.add791f6ac3d2fe.a] ==> lib [/tmp/libhfcommon.1000.add791f6ac3d2fe.a]
+    arg [-ldl] ==> lib [dl]
+    arg [-lrt] ==> lib [rt]
+    arg [--no-as-needed] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lrt] ==> lib [rt]
+    arg [-lm] ==> lib [m]
+    arg [-ldl] ==> lib [dl]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+    arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+  remove lib [/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a]
+  collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+  collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+  collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+  collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/llvm-14/bin/../lib] ==> [/usr/lib/llvm-14/lib]
+  collapse library dir [/lib] ==> [/lib]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  implicit libs: [/tmp/libhfnetdriver.1000.abf813b7e9c89d82.a;/tmp/libhfuzz.1000.82fa25c013558717.a;/tmp/libhfcommon.1000.add791f6ac3d2fe.a;dl;rt;pthread;rt;m;dl;gcc;gcc_s;pthread;c;gcc;gcc_s]
+  implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib/llvm-14/lib;/lib;/usr/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f0c3b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f0c3b.dir/build.make CMakeFiles/cmTC_f0c3b.dir/build
+gmake[1]: Entering directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o
+/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-clang++   -v -MD -MT CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -I /home/fuzz/honggfuzz/includes/ -D __NO_STRING_INLINES -D "HFND_FUZZING_ENTRY_FUNCTION_CXX(x,y)=extern const char* LIBHFNETDRIVER_module_netdriver;const char** LIBHFNETDRIVER_tmp1 = &LIBHFNETDRIVER_module_netdriver;extern \"C\" int HonggfuzzNetDriver_main(x,y);int HonggfuzzNetDriver_main(x,y)" -D "HFND_FUZZING_ENTRY_FUNCTION(x,y)=extern const char* LIBHFNETDRIVER_module_netdriver;const char** LIBHFNETDRIVER_tmp1 = &LIBHFNETDRIVER_module_netdriver;int HonggfuzzNetDriver_main(x,y);int HonggfuzzNetDriver_main(x,y)" -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -Wno-unused-command-line-argument -fdeprecated-macro -fdebug-compilation-dir=/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp -ferror-limit 19 -fsanitize-coverage-type=3 -fsanitize-coverage-indirect-calls -fsanitize-coverage-trace-cmp -fsanitize-coverage-trace-div -fsanitize-coverage-trace-pc-guard -fno-builtin -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -mllvm -inline-threshold=1000 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/fuzz/honggfuzz/includes
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_f0c3b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0c3b.dir/link.txt --verbose=1
+/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-clang++  -v CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f0c3b 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f0c3b /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib --whole-archive /usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a --no-whole-archive --dynamic-list=/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a.syms --whole-archive /usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone_cxx-x86_64.a --no-whole-archive --dynamic-list=/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone_cxx-x86_64.a.syms --wrap=strcmp --wrap=strcasecmp --wrap=stricmp --wrap=strncmp --wrap=strncasecmp --wrap=strnicmp --wrap=strstr --wrap=strcasestr --wrap=memcmp --wrap=bcmp --wrap=memmem --wrap=strcpy --wrap=strlcpy --wrap=ap_cstr_casecmp --wrap=ap_cstr_casecmpn --wrap=ap_strcasestr --wrap=apr_cstr_casecmp --wrap=apr_cstr_casecmpn --wrap=CRYPTO_memcmp --wrap=OPENSSL_memcmp --wrap=OPENSSL_strcasecmp --wrap=OPENSSL_strncasecmp --wrap=memcmpct --wrap=xmlStrncmp --wrap=xmlStrcmp --wrap=xmlStrEqual --wrap=xmlStrcasecmp --wrap=xmlStrncasecmp --wrap=xmlStrstr --wrap=xmlStrcasestr --wrap=memcmp_const_time --wrap=strcsequal --wrap=cmsstrcasecmp --wrap=g_strcmp0 --wrap=g_strcasecmp --wrap=g_strncasecmp --wrap=g_strstr_len --wrap=g_ascii_strcasecmp --wrap=g_ascii_strncasecmp --wrap=g_str_has_prefix --wrap=g_str_has_suffix --wrap=Curl_strcasecompare --wrap=curl_strequal --wrap=Curl_safe_strcasecompare --wrap=Curl_strncasecompare --wrap=curl_strnequal -u HonggfuzzNetDriver_main -u LIBHFUZZ_module_instrument -u LIBHFUZZ_module_memorycmp CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o /tmp/libhfnetdriver.1000.abf813b7e9c89d82.a /tmp/libhfuzz.1000.82fa25c013558717.a /tmp/libhfcommon.1000.add791f6ac3d2fe.a -ldl -lrt -lstdc++ -lm --no-as-needed -lpthread -lrt -lm -ldl -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+gmake[1]: Leaving directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/fuzz/honggfuzz/includes]
+    add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11]
+    add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11]
+    add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward]
+    add: [/usr/lib/llvm-14/lib/clang/14.0.0/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/home/fuzz/honggfuzz/includes] ==> [/home/fuzz/honggfuzz/includes]
+  collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11] ==> [/usr/include/c++/11]
+  collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11] ==> [/usr/include/x86_64-linux-gnu/c++/11]
+  collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward] ==> [/usr/include/c++/11/backward]
+  collapse include dir [/usr/lib/llvm-14/lib/clang/14.0.0/include] ==> [/usr/lib/llvm-14/lib/clang/14.0.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/home/fuzz/honggfuzz/includes;/usr/include/c++/11;/usr/include/x86_64-linux-gnu/c++/11;/usr/include/c++/11/backward;/usr/lib/llvm-14/lib/clang/14.0.0/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f0c3b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f0c3b.dir/build.make CMakeFiles/cmTC_f0c3b.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-clang++   -v -MD -MT CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/bin]
+  ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [ (in-process)]
+  ignore line: [ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -I /home/fuzz/honggfuzz/includes/ -D __NO_STRING_INLINES -D "HFND_FUZZING_ENTRY_FUNCTION_CXX(x y)=extern const char* LIBHFNETDRIVER_module_netdriver]
+  ignore line: [const char** LIBHFNETDRIVER_tmp1 = &LIBHFNETDRIVER_module_netdriver]
+  ignore line: [extern \"C\" int HonggfuzzNetDriver_main(x y)]
+  ignore line: [int HonggfuzzNetDriver_main(x y)" -D "HFND_FUZZING_ENTRY_FUNCTION(x y)=extern const char* LIBHFNETDRIVER_module_netdriver]
+  ignore line: [const char** LIBHFNETDRIVER_tmp1 = &LIBHFNETDRIVER_module_netdriver]
+  ignore line: [int HonggfuzzNetDriver_main(x y)]
+  ignore line: [int HonggfuzzNetDriver_main(x y)" -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -Wno-unused-command-line-argument -fdeprecated-macro -fdebug-compilation-dir=/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp -ferror-limit 19 -fsanitize-coverage-type=3 -fsanitize-coverage-indirect-calls -fsanitize-coverage-trace-cmp -fsanitize-coverage-trace-div -fsanitize-coverage-trace-pc-guard -fno-builtin -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -mllvm -inline-threshold=1000 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/fuzz/honggfuzz/includes]
+  ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11]
+  ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11]
+  ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward]
+  ignore line: [ /usr/lib/llvm-14/lib/clang/14.0.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking CXX executable cmTC_f0c3b]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0c3b.dir/link.txt --verbose=1]
+  ignore line: [/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-clang++  -v CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f0c3b ]
+  ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/bin]
+  ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f0c3b /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib --whole-archive /usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a --no-whole-archive --dynamic-list=/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a.syms --whole-archive /usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone_cxx-x86_64.a --no-whole-archive --dynamic-list=/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone_cxx-x86_64.a.syms --wrap=strcmp --wrap=strcasecmp --wrap=stricmp --wrap=strncmp --wrap=strncasecmp --wrap=strnicmp --wrap=strstr --wrap=strcasestr --wrap=memcmp --wrap=bcmp --wrap=memmem --wrap=strcpy --wrap=strlcpy --wrap=ap_cstr_casecmp --wrap=ap_cstr_casecmpn --wrap=ap_strcasestr --wrap=apr_cstr_casecmp --wrap=apr_cstr_casecmpn --wrap=CRYPTO_memcmp --wrap=OPENSSL_memcmp --wrap=OPENSSL_strcasecmp --wrap=OPENSSL_strncasecmp --wrap=memcmpct --wrap=xmlStrncmp --wrap=xmlStrcmp --wrap=xmlStrEqual --wrap=xmlStrcasecmp --wrap=xmlStrncasecmp --wrap=xmlStrstr --wrap=xmlStrcasestr --wrap=memcmp_const_time --wrap=strcsequal --wrap=cmsstrcasecmp --wrap=g_strcmp0 --wrap=g_strcasecmp --wrap=g_strncasecmp --wrap=g_strstr_len --wrap=g_ascii_strcasecmp --wrap=g_ascii_strncasecmp --wrap=g_str_has_prefix --wrap=g_str_has_suffix --wrap=Curl_strcasecompare --wrap=curl_strequal --wrap=Curl_safe_strcasecompare --wrap=Curl_strncasecompare --wrap=curl_strnequal -u HonggfuzzNetDriver_main -u LIBHFUZZ_module_instrument -u LIBHFUZZ_module_memorycmp CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o /tmp/libhfnetdriver.1000.abf813b7e9c89d82.a /tmp/libhfuzz.1000.82fa25c013558717.a /tmp/libhfcommon.1000.add791f6ac3d2fe.a -ldl -lrt -lstdc++ -lm --no-as-needed -lpthread -lrt -lm -ldl -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_f0c3b] ==> ignore
+    arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+    arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+    arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+    arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+    arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/llvm-14/bin/../lib] ==> dir [/usr/lib/llvm-14/bin/../lib]
+    arg [-L/lib] ==> dir [/lib]
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [--whole-archive] ==> ignore
+    arg [/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a] ==> lib [/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a]
+    arg [--no-whole-archive] ==> ignore
+    arg [--dynamic-list=/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a.syms] ==> ignore
+    arg [--whole-archive] ==> ignore
+    arg [/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone_cxx-x86_64.a] ==> lib [/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone_cxx-x86_64.a]
+    arg [--no-whole-archive] ==> ignore
+    arg [--dynamic-list=/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone_cxx-x86_64.a.syms] ==> ignore
+    arg [--wrap=strcmp] ==> ignore
+    arg [--wrap=strcasecmp] ==> ignore
+    arg [--wrap=stricmp] ==> ignore
+    arg [--wrap=strncmp] ==> ignore
+    arg [--wrap=strncasecmp] ==> ignore
+    arg [--wrap=strnicmp] ==> ignore
+    arg [--wrap=strstr] ==> ignore
+    arg [--wrap=strcasestr] ==> ignore
+    arg [--wrap=memcmp] ==> ignore
+    arg [--wrap=bcmp] ==> ignore
+    arg [--wrap=memmem] ==> ignore
+    arg [--wrap=strcpy] ==> ignore
+    arg [--wrap=strlcpy] ==> ignore
+    arg [--wrap=ap_cstr_casecmp] ==> ignore
+    arg [--wrap=ap_cstr_casecmpn] ==> ignore
+    arg [--wrap=ap_strcasestr] ==> ignore
+    arg [--wrap=apr_cstr_casecmp] ==> ignore
+    arg [--wrap=apr_cstr_casecmpn] ==> ignore
+    arg [--wrap=CRYPTO_memcmp] ==> ignore
+    arg [--wrap=OPENSSL_memcmp] ==> ignore
+    arg [--wrap=OPENSSL_strcasecmp] ==> ignore
+    arg [--wrap=OPENSSL_strncasecmp] ==> ignore
+    arg [--wrap=memcmpct] ==> ignore
+    arg [--wrap=xmlStrncmp] ==> ignore
+    arg [--wrap=xmlStrcmp] ==> ignore
+    arg [--wrap=xmlStrEqual] ==> ignore
+    arg [--wrap=xmlStrcasecmp] ==> ignore
+    arg [--wrap=xmlStrncasecmp] ==> ignore
+    arg [--wrap=xmlStrstr] ==> ignore
+    arg [--wrap=xmlStrcasestr] ==> ignore
+    arg [--wrap=memcmp_const_time] ==> ignore
+    arg [--wrap=strcsequal] ==> ignore
+    arg [--wrap=cmsstrcasecmp] ==> ignore
+    arg [--wrap=g_strcmp0] ==> ignore
+    arg [--wrap=g_strcasecmp] ==> ignore
+    arg [--wrap=g_strncasecmp] ==> ignore
+    arg [--wrap=g_strstr_len] ==> ignore
+    arg [--wrap=g_ascii_strcasecmp] ==> ignore
+    arg [--wrap=g_ascii_strncasecmp] ==> ignore
+    arg [--wrap=g_str_has_prefix] ==> ignore
+    arg [--wrap=g_str_has_suffix] ==> ignore
+    arg [--wrap=Curl_strcasecompare] ==> ignore
+    arg [--wrap=curl_strequal] ==> ignore
+    arg [--wrap=Curl_safe_strcasecompare] ==> ignore
+    arg [--wrap=Curl_strncasecompare] ==> ignore
+    arg [--wrap=curl_strnequal] ==> ignore
+    arg [-u] ==> ignore
+    arg [HonggfuzzNetDriver_main] ==> ignore
+    arg [-u] ==> ignore
+    arg [LIBHFUZZ_module_instrument] ==> ignore
+    arg [-u] ==> ignore
+    arg [LIBHFUZZ_module_memorycmp] ==> ignore
+    arg [CMakeFiles/cmTC_f0c3b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [/tmp/libhfnetdriver.1000.abf813b7e9c89d82.a] ==> lib [/tmp/libhfnetdriver.1000.abf813b7e9c89d82.a]
+    arg [/tmp/libhfuzz.1000.82fa25c013558717.a] ==> lib [/tmp/libhfuzz.1000.82fa25c013558717.a]
+    arg [/tmp/libhfcommon.1000.add791f6ac3d2fe.a] ==> lib [/tmp/libhfcommon.1000.add791f6ac3d2fe.a]
+    arg [-ldl] ==> lib [dl]
+    arg [-lrt] ==> lib [rt]
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [--no-as-needed] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lrt] ==> lib [rt]
+    arg [-lm] ==> lib [m]
+    arg [-ldl] ==> lib [dl]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+    arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+  remove lib [/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a]
+  remove lib [/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.ubsan_standalone_cxx-x86_64.a]
+  collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+  collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+  collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+  collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/llvm-14/bin/../lib] ==> [/usr/lib/llvm-14/lib]
+  collapse library dir [/lib] ==> [/lib]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  implicit libs: [/tmp/libhfnetdriver.1000.abf813b7e9c89d82.a;/tmp/libhfuzz.1000.82fa25c013558717.a;/tmp/libhfcommon.1000.add791f6ac3d2fe.a;dl;rt;stdc++;m;pthread;rt;m;dl;gcc_s;gcc;pthread;c;gcc_s;gcc]
+  implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib/llvm-14/lib;/lib;/usr/lib]
+  implicit fwks: []
+
+
+Determining if the function mkstemp exists passed with the following output:
+Change Dir: /home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4ec9c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4ec9c.dir/build.make CMakeFiles/cmTC_4ec9c.dir/build
+gmake[1]: Entering directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4ec9c.dir/CheckFunctionExists.c.o
+/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-cc   -DCHECK_FUNCTION_EXISTS=mkstemp -MD -MT CMakeFiles/cmTC_4ec9c.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_4ec9c.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_4ec9c.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4ec9c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ec9c.dir/link.txt --verbose=1
+/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-cc  -DCHECK_FUNCTION_EXISTS=mkstemp -rdynamic CMakeFiles/cmTC_4ec9c.dir/CheckFunctionExists.c.o -o cmTC_4ec9c 
+gmake[1]: Leaving directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function mkstemps exists passed with the following output:
+Change Dir: /home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a66ab/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a66ab.dir/build.make CMakeFiles/cmTC_a66ab.dir/build
+gmake[1]: Entering directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a66ab.dir/CheckFunctionExists.c.o
+/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-cc   -DCHECK_FUNCTION_EXISTS=mkstemps -MD -MT CMakeFiles/cmTC_a66ab.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_a66ab.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_a66ab.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a66ab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a66ab.dir/link.txt --verbose=1
+/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-cc  -DCHECK_FUNCTION_EXISTS=mkstemps -rdynamic CMakeFiles/cmTC_a66ab.dir/CheckFunctionExists.c.o -o cmTC_a66ab 
+gmake[1]: Leaving directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function popen exists passed with the following output:
+Change Dir: /home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_06527/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_06527.dir/build.make CMakeFiles/cmTC_06527.dir/build
+gmake[1]: Entering directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_06527.dir/CheckFunctionExists.c.o
+/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-cc   -DCHECK_FUNCTION_EXISTS=popen -MD -MT CMakeFiles/cmTC_06527.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_06527.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_06527.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_06527
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06527.dir/link.txt --verbose=1
+/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-cc  -DCHECK_FUNCTION_EXISTS=popen -rdynamic CMakeFiles/cmTC_06527.dir/CheckFunctionExists.c.o -o cmTC_06527 
+gmake[1]: Leaving directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test HAVE_STD_SORT succeeded with the following output:
+Change Dir: /home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9daed/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9daed.dir/build.make CMakeFiles/cmTC_9daed.dir/build
+gmake[1]: Entering directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9daed.dir/src.cxx.o
+/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-clang++ -DHAVE_STD_SORT   -MD -MT CMakeFiles/cmTC_9daed.dir/src.cxx.o -MF CMakeFiles/cmTC_9daed.dir/src.cxx.o.d -o CMakeFiles/cmTC_9daed.dir/src.cxx.o -c /home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9daed
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9daed.dir/link.txt --verbose=1
+/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-clang++ -rdynamic CMakeFiles/cmTC_9daed.dir/src.cxx.o -o cmTC_9daed 
+gmake[1]: Leaving directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <algorithm>
+    bool cmp(const int &x, const int &y) { return x < y; }
+    int a[100];
+    int main() { std::sort(a, a+100, &cmp); }
+Determining if the function fseeko exists passed with the following output:
+Change Dir: /home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ffced/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ffced.dir/build.make CMakeFiles/cmTC_ffced.dir/build
+gmake[1]: Entering directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ffced.dir/CheckFunctionExists.c.o
+/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-cc   -DCHECK_FUNCTION_EXISTS=fseeko -MD -MT CMakeFiles/cmTC_ffced.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_ffced.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_ffced.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ffced
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ffced.dir/link.txt --verbose=1
+/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-cc  -DCHECK_FUNCTION_EXISTS=fseeko -rdynamic CMakeFiles/cmTC_ffced.dir/CheckFunctionExists.c.o -o cmTC_ffced 
+gmake[1]: Leaving directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_340ef/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_340ef.dir/build.make CMakeFiles/cmTC_340ef.dir/build
+gmake[1]: Entering directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_340ef.dir/CheckIncludeFile.c.o
+/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-cc    -MD -MT CMakeFiles/cmTC_340ef.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_340ef.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_340ef.dir/CheckIncludeFile.c.o -c /home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_340ef
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_340ef.dir/link.txt --verbose=1
+/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-cc -rdynamic CMakeFiles/cmTC_340ef.dir/CheckIncludeFile.c.o -o cmTC_340ef 
+gmake[1]: Leaving directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_24f0f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_24f0f.dir/build.make CMakeFiles/cmTC_24f0f.dir/build
+gmake[1]: Entering directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_24f0f.dir/src.c.o
+/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-cc -DCMAKE_HAVE_LIBC_PTHREAD   -MD -MT CMakeFiles/cmTC_24f0f.dir/src.c.o -MF CMakeFiles/cmTC_24f0f.dir/src.c.o.d -o CMakeFiles/cmTC_24f0f.dir/src.c.o -c /home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_24f0f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24f0f.dir/link.txt --verbose=1
+/home/fuzz/honggfuzz/hfuzz_cc/hfuzz-cc -rdynamic CMakeFiles/cmTC_24f0f.dir/src.c.o -o cmTC_24f0f 
+gmake[1]: Leaving directory '/home/fuzz/pdfalto/build-hong/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

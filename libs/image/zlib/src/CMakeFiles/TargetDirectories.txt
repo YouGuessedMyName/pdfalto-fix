@@ -1,0 +1,3 @@
+/home/fuzz/pdfalto/libs/image/zlib/src/CMakeFiles/zlib.dir
+/home/fuzz/pdfalto/libs/image/zlib/src/CMakeFiles/edit_cache.dir
+/home/fuzz/pdfalto/libs/image/zlib/src/CMakeFiles/rebuild_cache.dir
